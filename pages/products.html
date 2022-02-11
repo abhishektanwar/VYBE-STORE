@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VYBE STORE | PRODUCTS</title>
+	<link rel="stylesheet" href="https://trusting-archimedes-7a9ccf.netlify.app/style.css">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../CSS/products.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="grid-container-skleton">
+		<nav class="nav-bar shadow-box" id="my-nav-bar">
+			<div class="nav-section">
+				<!-- hamburger menu -->
+				<div class="burger nav-section-items">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+
+				<!-- LOGO -->
+				<div class="nav-logo nav-section-items">
+					<a class="link-no-style" href="/">
+						<div class="primary-text-color logo-title">VYBE STORE</div>
+					</a>
+				</div>
+				<ul class="nav-bar-links list-style-none nav-section-items">
+					<li class="list-inline-item avatar-in-nav-links">
+						<div class="primary-text-color logo-title">VYBE UI</div>
+					</li>
+					<!-- <li class="list-inline-item">
+					<a href="./index.html" class="link-no-style nav-section-link">HOME</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="./components.html" class="link-no-style nav-section-link">DOCUMENTATION</a>
+				</li> -->
+
+				</ul>
+			</div>
+			<div class="navbar-search-bar">
+				<label class="search-bar">
+					<span class="search-bar-btn" type="submit"><i class="fa fa-search"> </i></span>
+					<input class="search-bar-input" type="text" placeholder="Search" name="search">
+				</label>
+			</div>
+
+			<!-- RIGHT SIDE NAV -->
+			<div class="nav-section right-nav-section">
+				<ul class="nav-icons list-style-none nav-section-item-width50pc">
+					<li class="list-inline-item"><button class="btn btn-filled-primary text-bold-weight">Login</button>
+					</li>
+					<li class="list-inline-item">
+
+						<span class="badge-icon badge-container">
+							<i class="fas fa-heart"></i>
+							<span class="badge-status-default badge-status-number">2</span>
+						</span>
+					</li>
+					<li class="list-inline-item">
+						<a href="./cart.html" style="cursor: pointer;display: flex;align-items: center;">
+							<span class="badge-icon badge-container"
+								style="margin-right: 10px;height: unset;width: unset;">
+								<i class="fas fa-shopping-cart"></i>
+
+								<span class="badge-status-default badge-status-number" style="top: 0;">2</span>
+							</span>
+							<span style="font-size: 28px;margin-top: 1rem;">cart</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- filter side-bar -->
+		<div class="filter-bar flex-column" id="filter-side-bar">
+			<div class="flex-row flex-align-item-center filter-bar-header">
+				<h3 class="text-bold-weight">Filters</h3>
+				<button class="link-no-style">
+					<h5>Clear</h5>
+				</button>
+			</div>
+			<div class="filter-bar-body flex-column">
+				<div class="filter-type">
+					<h3 class="text-bold-weight">Price</h3>
+					<div class="price-input">
+						<div class="field">
+							<span>Min</span>
+							<input type="number" class="input-min" value="2500">
+						</div>
+						<div class="separator">-</div>
+						<div class="field">
+							<span>Max</span>
+							<input type="number" class="input-max" value="7500">
+						</div>
+
+					</div>
+					<div class="slider">
+						<div class="progress"></div>
+					</div>
+					<div class="range-input">
+						<input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+						<input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+					</div>
+				</div>
+				<div class="filter-type margin-top-16">
+					<h3 class="text-bold-weight">Category</h3>
+					<label class="checkbox-container">Men's Clothing
+						<input type="checkbox">
+						<span class="checkmark"></span>
+					</label>
+
+					<label class="checkbox-container">Men's Clothing
+						<input type="checkbox">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="filter-type flex-column margin-top-16">
+					<h3 class="text-bold-weight">Rating</h3>
+					<label class="radio-container">
+						<input type="radio" name="key" value="value" />
+						<span>4 Stars & above</span>
+					</label>
+					<label class="radio-container">
+						<input type="radio" name="key" value="value" />
+						<span>3 Stars & above</span>
+					</label>
+					<label class="radio-container">
+						<input type="radio" name="key" value="value" />
+						<span>2 Stars & above</span>
+					</label>
+					<label class="radio-container">
+						<input type="radio" name="key" value="value" />
+						<span>1 Stars & above</span>
+					</label>
+
+
+				</div>
+				<div class="filter-type flex-column margin-top-16">
+					<h3 class="text-bold-weight">Sort by</h3>
+					<label class="radio-container">
+						<input type="radio" name="key" value="value" />
+						<span>Price - Low to High</span>
+					</label>
+					<label class="radio-container">
+						<input type="radio" name="key" value="value" />
+						<span>Price - High to Low</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- main section -->
+		<section class="products-listing">
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn"><i class="fas fa-heart wishlisted"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="margin-trb-16 btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn"><i class="fas fa-heart"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="margin-trb-16 btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn"><i class="fas fa-heart"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="margin-trb-16 btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn"><i class="fas fa-heart"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="margin-trb-16 btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn"><i class="fas fa-heart"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="margin-trb-16 btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn"><i class="fas fa-heart"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="margin-trb-16 btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn "><i class="fas fa-heart"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="margin-trb-16 btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn "><i class="fas fa-heart"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="margin-trb-16 btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn "><i class="fas fa-heart"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="margin-trb-16 btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn "><i class="fas fa-heart"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="margin-trb-16 btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn "><i class="fas fa-heart"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="margin-trb-16 btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn "><i class="fas fa-heart"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="margin-trb-16 btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn "><i class="fas fa-heart"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="margin-trb-16 btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn "><i class="fas fa-heart"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-card flex-column margin-trb-20 shadow-box">
+				<div class="image-container badge-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+					<button class="dismiss wishlist-btn "><i class="fas fa-heart"></i></button>
+				</div>
+
+				<div class="card-text-container flex-column flex-align-item-center">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="body-typo-md text-weight-medium">
+							Rs.1890
+							<span class="text-light-weight"><small><span class="typo-strike-through">Rs.2099</span><span
+										class="primary-text-color"> 10%</span></small></span>
+						</p>
+					</div>
+
+					<div class="card-action-btn-container">
+						<button class="btn btn-filled-primary">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="../JS/priceRangeFilter.js"></script>
+</body>
+
+</html>
