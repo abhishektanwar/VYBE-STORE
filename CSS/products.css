@@ -1,0 +1,270 @@
+.grid-container-skleton{
+	grid-template-rows: 7vh 1fr ;
+	grid-template-areas: 'header header header header header'
+	'filter-bar products-listing products-listing products-listing products-listing';	
+	row-gap: 3rem;
+}
+
+/* filter-bar */
+.filter-bar{
+	grid-area: filter-bar;
+	padding:3rem 1.6rem 0 1.6rem;
+}
+
+.filter-bar-header{
+	justify-content: space-between;
+}
+
+.products-listing{
+	grid-area: products-listing;
+	background-color: var(--bg-color-primary);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:flex-start ;
+	align-self: flex-start;
+	padding: 2rem;
+	padding-left: 4rem;
+	overflow: auto;
+	height: 85vh;
+
+}
+
+/* custom color checkbox */
+
+.checkbox-container {
+	display: block;
+	position: relative;
+	padding-left: 3rem;
+	margin-bottom: 1.5rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+/* Hide the default checkbox */
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+/* Creating a custom checkbox
+based on demand */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: var(--white-color);
+	border: 1px solid var(--black-color);
+}
+
+/* Specify the background color to be
+shown when checkbox is checked */
+.checkbox-container input:checked ~ .checkmark {
+	background-color: var(--primary-color);
+}
+
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Display checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and 
+showing only two border to make it look
+like a tickmark */
+.checkbox-container .checkmark:after {
+	left: 6px;
+	bottom: 6px;
+	width: 4px;
+	height: 8px;
+	border: solid var(--white-color);
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* custom radio btn */
+
+.radio-container{
+	font-size: 20px;
+	margin-bottom: 1rem;
+}
+
+label > input[type="radio"] {
+	display: none;
+}
+
+label > input[type="radio"] + *::before {
+	content: "";
+	display: inline-block;
+	vertical-align: bottom;
+	width: 20px;
+	height: 2px;
+	margin-right: 1rem;
+	border-radius: 50%;
+	border: 1px solid var(--black-color);
+}
+
+label > input[type="radio"]:checked + *::before {
+	background: radial-gradient(var(--primary-color) 0%, var(--primary-color) 40%, transparent 50%, transparent);
+	border-color: var(--primary-color);
+}
+
+/* price range */
+.wrapper{
+	width: 40rem;
+	background: var(--white-color);
+	border-radius: 10px;
+	padding: 2rem 2.5rem 4.0rem;
+}
+
+header h2{
+	font-size: 2.4rem;
+	font-weight: 600;
+}
+
+header p{
+	margin-top: 5px;
+	font-size: 1.6rem;
+}
+
+  .price-input{
+	width: 100%;
+	display: flex;
+	margin: 3.0rem 0 3.5rem;
+}
+
+  .price-input .field{
+	display: flex;
+	width: 100%;
+	height: 4.5rem;
+	align-items: center;
+}
+
+.field input{
+	width: 100%;
+	height: 100%;
+	outline: none;
+	font-size: 1.9rem;
+	margin-left: 12px;
+	border-radius: 5px;
+	text-align: center;
+	border: 1px solid #999;
+	-moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+  .price-input .separator{
+	width: 13rem;
+	display: flex;
+	font-size: 1.9rem;
+	align-items: center;
+	justify-content: center;
+  }
+
+.slider{
+	height: 5px;
+	position: relative;
+	background: var(--white-color);
+	border-radius: 5px;
+}
+
+.slider .progress{
+	height: 100%;
+	left: 25%;
+	right: 25%;
+	position: absolute;
+	border-radius: 5px;
+	background: var(--primary-color);
+}
+
+  .range-input{
+	position: relative;
+}
+
+.range-input input{
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	top: -5px;
+	background: none;
+	pointer-events: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+	height: 17px;
+	width: 17px;
+	border-radius: 50%;
+	background: var(--primary-color);
+	pointer-events: auto;
+	-webkit-appearance: none;
+}
+input[type="range"]::-moz-range-thumb{
+	height: 17px;
+	width: 17px;
+	border: none;
+	border-radius: 50%;
+	background: var(--primary-color);
+	pointer-events: auto;
+	-moz-appearance: none;
+}
+
+/* wishlist button */
+.dismiss{
+	background-color: white;
+	padding:4px;
+	padding-bottom: 2px;
+	border-radius: 50%;
+  cursor: pointer;
+}
+
+.wishlist-btn i{
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--black-color);
+	color:var(--white-color);
+}
+
+.wishlist-btn .wishlisted{
+	color: var(--favorite-color);
+	-webkit-text-stroke-width: unset;
+}
+
+.vertical-card{
+	height: max-content;
+	max-height: 51rem;
+}
+
+.card-text-container{
+	padding: 2rem 0 0 0;
+}
+
+.card-action-btn-container{
+	width: 100%;
+}
+
+.card-action-btn-container button{
+	margin: 1rem 0 0 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.filter-bar .link-no-style{
+	text-decoration: underline;
+}
