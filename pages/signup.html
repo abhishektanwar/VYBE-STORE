@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VYBE STORE | LOGIN</title>
+	<link rel="stylesheet" href="https://vybe-ui.netlify.app/style.css">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../CSS/products.css">
+	<link rel="stylesheet" href="../CSS/authentication.css">
+	<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+	<nav class="nav-bar shadow-box" id="my-nav-bar">
+		<div class="nav-section">
+			<!-- hamburger menu -->
+			<div class="burger nav-section-items">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+
+			<!-- LOGO -->
+			<div class="nav-logo nav-section-items">
+				<a class="link-no-style" href="/">
+					<div class="primary-text-color logo-title">VYBE STORE</div>
+				</a>
+			</div>
+			<ul class="nav-bar-links list-style-none nav-section-items">
+				<li class="list-inline-item avatar-in-nav-links">
+					<div class="primary-text-color logo-title">VYBE UI</div>
+				</li>
+
+			</ul>
+		</div>
+		<div class="navbar-search-bar">
+			<label class="search-bar">
+				<span class="search-bar-btn" type="submit"><i class="fa fa-search"> </i></span>
+				<input class="search-bar-input" type="text" placeholder="Search" name="search">
+			</label>
+		</div>
+
+		<!-- RIGHT SIDE NAV -->
+		<div class="nav-section right-nav-section">
+			<ul class="nav-icons list-style-none nav-section-item-width50pc">
+				<li class="list-inline-item"><button class="btn btn-filled-primary text-bold-weight">Login</button>
+				</li>
+				<li class="list-inline-item">
+
+					<span class="badge-icon badge-container">
+						<i class="fas fa-heart"></i>
+						<span class="badge-status-default badge-status-number">2</span>
+					</span>
+				</li>
+				<li class="list-inline-item">
+					<a href="./cart.html" style="cursor: pointer;display: flex;align-items: center;">
+						<span class="badge-icon badge-container" style="margin-right: 10px;height: unset;width: unset;">
+							<i class="fas fa-shopping-cart"></i>
+
+							<span class="badge-status-default badge-status-number" style="top: 0;">2</span>
+						</span>
+						<span style="font-size: 28px;margin-top: 1rem;">cart</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="auth-body">
+		<div class="authentication-container flex-column">
+			<h3 class="text-bold-weight">Signup</h3>
+			<form action="">
+				<div class="flex-column form-field-container">
+					<label class="input-label required-field">Email Address</label>
+					<input type="email" class="form-field" placeholder="username@xyz.com" required>
+				</div>
+				<div class="flex-column form-field-container">
+					<label class="input-label ">Password</label>
+					<input class="form-field" type="password" name="password" id="password"
+						placeholder="Enter password">
+				</div>
+				<div class="flex-row form-field-container flex-align-item-center"
+					style="justify-content: space-between;">
+					<label class="checkbox-container">I accept all Terms & Conditions
+						<input type="checkbox">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="card-action-btn-container">
+					<button class="margin-trb-16 btn-filled-primary btn ">
+						Create New Account
+					</button>
+					<a class="typo-xs" href="./login.html">Already have an Account &nbsp;<i
+							class="fas fa-chevron-right"></i></a>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
