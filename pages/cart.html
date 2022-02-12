@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VYBE STORE | CART</title>
+	<link rel="stylesheet" href="https://vybe-ui.netlify.app/style.css">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../CSS/cart.css">
+	<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+	<nav class="nav-bar shadow-box" id="my-nav-bar">
+		<div class="nav-section">
+			<!-- hamburger menu -->
+			<div class="burger nav-section-items">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+
+			<!-- LOGO -->
+			<div class="nav-logo nav-section-items">
+				<a class="link-no-style" href="/">
+					<div class="primary-text-color logo-title">VYBE STORE</div>
+				</a>
+			</div>
+			<ul class="nav-bar-links list-style-none nav-section-items">
+				<li class="list-inline-item avatar-in-nav-links">
+					<div class="primary-text-color logo-title">VYBE UI</div>
+				</li>
+				<!-- <li class="list-inline-item">
+				<a href="./index.html" class="link-no-style nav-section-link">HOME</a>
+			</li>
+			<li class="list-inline-item">
+				<a href="./components.html" class="link-no-style nav-section-link">DOCUMENTATION</a>
+			</li> -->
+
+			</ul>
+		</div>
+		<div class="navbar-search-bar">
+			<label class="search-bar">
+				<span class="search-bar-btn" type="submit"><i class="fa fa-search"> </i></span>
+				<input class="search-bar-input" type="text" placeholder="Search" name="search">
+			</label>
+		</div>
+
+		<!-- RIGHT SIDE NAV -->
+		<div class="nav-section right-nav-section">
+			<ul class="nav-icons list-style-none nav-section-item-width50pc">
+				<li class="list-inline-item"><button class="btn btn-filled-primary text-bold-weight">Login</button>
+				</li>
+				<li class="list-inline-item">
+
+					<span class="badge-icon badge-container">
+						<i class="fas fa-heart"></i>
+						<span class="badge-status-default badge-status-number">2</span>
+					</span>
+				</li>
+				<li class="list-inline-item">
+					<a href="./cart.html" style="cursor: pointer;display: flex;align-items: center;">
+						<span class="badge-icon badge-container"
+							style="margin-right: 10px;height: unset;width: unset;">
+							<i class="fas fa-shopping-cart"></i>
+
+							<span class="badge-status-default badge-status-number" style="top: 0;">2</span>
+						</span>
+						<span style="font-size: 28px;margin-top: 1rem;">cart</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="cart-container flex-row flex-justify-content-center">
+		<div class="product-list-container flex-column">
+			<div class="horizontal-card margin-trb-20 shadow-box">
+				<div class="image-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+				</div>
+
+				<div class="card-text-container flex-column ">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="typo-md text-bold-weight margin-top-12">
+							Rs.1890
+							<span class="text-medium-weight typo-sm"><small><span
+										class="typo-strike-through textSecondaryTextColor">Rs.2099</span></small></span>
+
+						</p>
+						<span class="textSecondaryTextColor text-bold-weight typo-sm margin-top-12"
+							style="display: inline-block;"> 10%</span>
+						<div class="quantity-container flex-row flex-align-item-center margin-top-12">
+							<p class="body-typo-md text-medium-weight">Quantity :</p>
+							<button class="quantity-btn">-</button>
+							<input type="number" name="product-quantity" id="product-qyantity" value=1>
+							<button class="quantity-btn">+</button>
+						</div>
+					</div>
+
+
+					<div class="card-action-btn-container">
+						<button class="btn btn-filled-primary text-bold-weight">
+							Add to Cart
+						</button>
+						<button class="btn btn-outline-primary text-bold-weight margin-top-16">
+							Move to Wishlist
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="horizontal-card margin-trb-20 shadow-box">
+				<div class="image-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+				</div>
+
+				<div class="card-text-container flex-column ">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="typo-md text-bold-weight margin-top-12">
+							Rs.1890
+							<span class="text-medium-weight typo-sm"><small><span
+										class="typo-strike-through textSecondaryTextColor">Rs.2099</span></small></span>
+
+						</p>
+						<span class="textSecondaryTextColor text-bold-weight typo-sm margin-top-12"
+							style="display: inline-block;"> 10%</span>
+						<div class="quantity-container flex-row flex-align-item-center margin-top-12">
+							<p class="body-typo-md text-medium-weight">Quantity :</p>
+							<button class="quantity-btn">-</button>
+							<input type="number" name="product-quantity" id="product-qyantity" value=1>
+							<button class="quantity-btn">+</button>
+						</div>
+					</div>
+
+
+					<div class="card-action-btn-container">
+						<button class="btn btn-filled-primary text-bold-weight">
+							Add to Cart
+						</button>
+						<button class="btn btn-outline-primary text-bold-weight margin-top-16">
+							Move to Wishlist
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="horizontal-card margin-trb-20 shadow-box">
+				<div class="image-container">
+					<img src="../Assets/Images/mens-jacket.jpg" loading="lazy" alt="product-image"
+						class="responsive-img image-container" />
+				</div>
+
+				<div class="card-text-container flex-column ">
+					<div>
+						<div class="flex-row flex-align-item-center">
+							<h6 class="text-light-weight">
+								Men's Premium Jacket
+							</h6>
+						</div>
+					</div>
+					<div class="text-container-description">
+						<p class="typo-md text-bold-weight margin-top-12">
+							Rs.1890
+							<span class="text-medium-weight typo-sm"><small><span
+										class="typo-strike-through textSecondaryTextColor">Rs.2099</span></small></span>
+
+						</p>
+						<span class="textSecondaryTextColor text-bold-weight typo-sm margin-top-12"
+							style="display: inline-block;"> 10%</span>
+						<div class="quantity-container flex-row flex-align-item-center margin-top-12">
+							<p class="body-typo-md text-medium-weight">Quantity :</p>
+							<button class="quantity-btn">-</button>
+							<input type="number" name="product-quantity" id="product-qyantity" value=1>
+							<button class="quantity-btn">+</button>
+						</div>
+					</div>
+
+
+					<div class="card-action-btn-container">
+						<button class="btn btn-filled-primary text-bold-weight">
+							Add to Cart
+						</button>
+						<button class="btn btn-outline-primary text-bold-weight margin-top-16">
+							Move to Wishlist
+						</button>
+					</div>
+					<div class="card-action-btn-container">
+						<button class="btn btn-filled-primary text-bold-weight">
+							Add to Cart
+						</button>
+						<button class="btn btn-outline-primary text-bold-weight margin-top-16">
+							Move to Wishlist
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="total-ticket-container flex-column">
+			<div class="card-text-container flex-column ">
+				<div class="border-bottom">
+					<p class="typo-md text-bold-weight margin-bottom-10">
+						Price Details
+					</p>
+				</div>
+				
+				<div class="text-container-description flex-column border-bottom">
+					<div class="flex-row ticket-container-item margin-top-bottom-10">
+						<p class="typo-md text-light-weight margin-top-bottom-10">
+							Price (2 items)
+						</p>
+						<p class="typo-md text-light-weight margin-top-bottom-10">
+							₹ 4198
+						</p>
+					</div>
+					<div class="flex-row ticket-container-item margin-top-bottom-10">
+						<p class="typo-md text-light-weight margin-top-bottom-10">
+							Discount
+						</p>
+						<p class="typo-md text-light-weight margin-top-bottom-10">
+							-₹ 418
+						</p>
+					</div>
+					<div class="flex-row ticket-container-item margin-top-bottom-10">
+						<p class="typo-md text-light-weight margin-top-bottom-10">
+							Delivery charges
+						</p>
+						<p class="typo-md text-light-weight margin-top-bottom-10">
+							₹ 499
+						</p>
+					</div>
+				</div>
+				<div class="flex-row ticket-container-item margin-top-bottom-10 border-bottom">
+					<p class="typo-md text-bold-weight margin-top-bottom-10">
+						TOTAL AMOUNT
+					</p>
+					<p class="typo-md text-bold-weight margin-top-bottom-10">
+						₹ 4279
+					</p>
+				</div>
+				<p class="typo-sm text-light-weight margin-top-bottom-10">
+					You will save ₹ 418 on this order.
+				</p>
+				<div class="card-action-btn-container margin-top-16">
+					<button class="btn btn-filled-primary text-bold-weight">
+						PLACE ORDER
+					</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
