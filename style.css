@@ -6,9 +6,9 @@
 :root{
 	--white-color:#fff;
 	--black-color:#000 ;
-	--favorite-color:rgba(255, 0, 0, 0.952);
-	--border-color:rgba(88, 85, 85, 0.384);
-	--grey-background-color:rgba(224, 224, 224, 0.31);
+	--favorite-color:#ff0000f3;
+	--border-color:#58555562;
+	--grey-background-color:#e0e0e04f;
 }
 .search-bar{   
 	width: 100%;
