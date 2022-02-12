@@ -3,12 +3,16 @@
 	grid-template-areas: 'header header header header header'
 	'filter-bar products-listing products-listing products-listing products-listing';	
 	row-gap: 3rem;
+	background-color: var(--grey-background-color);
+	align-items: flex-start;
 }
 
 /* filter-bar */
 .filter-bar{
 	grid-area: filter-bar;
 	padding:3rem 1.6rem 0 1.6rem;
+	background-color: var(--white-color);
+	align-self: flex-start;
 }
 
 .filter-bar-header{
@@ -17,15 +21,10 @@
 
 .products-listing{
 	grid-area: products-listing;
-	background-color: var(--bg-color-primary);
-	display: flex;
-	flex-wrap: wrap;
-	justify-content:flex-start ;
-	align-self: flex-start;
-	padding: 2rem;
-	padding-left: 4rem;
-	overflow: auto;
-	height: 85vh;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+	margin-left: 14rem;
+	margin-right: 12rem;
 
 }
 
