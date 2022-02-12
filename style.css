@@ -6,7 +6,9 @@
 :root{
 	--white-color:#fff;
 	--black-color:#000 ;
-	--favorite-color:rgba(255, 0, 0, 0.952);
+	--favorite-color:#ff0000f3;
+	--border-color:#58555562;
+	--grey-background-color:#e0e0e04f;
 }
 .search-bar{   
 	width: 100%;
@@ -39,6 +41,10 @@
 .btn-filled-primary{
 	padding: 4px 12px;
 	border-radius:0 ;
+}
+
+.btn-outline-primary{
+	border-radius: 0;
 }
 
 .badge-icon i{
