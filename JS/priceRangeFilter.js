@@ -36,3 +36,15 @@ rangeInput.forEach(input =>{
         }
     });
 });
+
+const filterSidebar = document.querySelector('#filter-side-bar');
+const filterBarBody = document.getElementsByClassName('filter-bar-body')
+const filterBarBodyId = document.getElementById('filter-bar-bodya')
+
+filterSidebar.addEventListener('click',()=>{
+    console.log('filter bar clicked')
+    filterSidebar.classList.toggle('sidebar-active');
+
+})
+
+

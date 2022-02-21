@@ -21,12 +21,12 @@
 		<nav class="nav-bar shadow-box" id="my-nav-bar">
 			<div class="nav-section">
 				<!-- hamburger menu -->
-				<div class="burger nav-section-items">
-					<div class="line1"></div>
-					<div class="line2"></div>
-					<div class="line3"></div>
+				<div id="hamburger-menu-icon" class="hamburger nav-section-items">
+					<span >
+						<i class="fas fa-bars font-size-24"></i>
+					</span>
+					
 				</div>
-
 				<!-- LOGO -->
 				<div class="nav-logo nav-section-items">
 					<a class="link-no-style" href="/">
@@ -36,7 +36,15 @@
 				<ul class="nav-bar-links list-style-none nav-section-items">
 					<li class="list-inline-item avatar-in-nav-links">
 						<div class="primary-text-color logo-title">VYBE STORE</div>
+						<span id="close-mobile-nav" ><i class="fas fa-times font-size-24"></i></span>
 					</li>
+					<li class="list-inline-item navbar-search-bar">
+						<label class="search-bar">
+							<span class="search-bar-btn" type="submit"><i class="fa fa-search"> </i></span>
+							<input class="search-bar-input" type="text" placeholder="Search" name="search">
+						</label>
+					</li>
+					<li class="list-inline-item"><button class="btn btn-filled-primary text-bold-weight"><a href="/pages/login.html" style="color: var(--white-color);">Login</a></button></li>
 
 				</ul>
 			</div>
@@ -75,14 +83,19 @@
 			</div>
 		</nav>
 		<!-- filter side-bar -->
+		
 		<div class="filter-bar flex-column" id="filter-side-bar">
+			<div class="sidebar-toggle-button">
+				<h2 class="typo-sm sidebar-title typo-lg">FILTERS</h2>
+				<span class="sidebar-toggle-down-arrow"><i class="typo-sm fas fa-chevron-down"></i></span>
+			</div>
 			<div class="flex-row flex-align-item-center filter-bar-header">
 				<h3 class="text-bold-weight">Filters</h3>
 				<button class="link-no-style">
 					<h5>Clear</h5>
 				</button>
 			</div>
-			<div class="filter-bar-body flex-column">
+			<div class="filter-bar-body flex-column sidebar-active" id="filter-bar-bodya">
 				<div class="filter-type">
 					<h3 class="text-bold-weight">Price</h3>
 					<div class="price-input">
@@ -606,6 +619,8 @@
 		</section>
 	</div>
 	<script src="../JS/priceRangeFilter.js"></script>
+	<script src="../JS/navbar.js"></script>
+
 </body>
 
 </html>
