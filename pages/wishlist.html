@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>VYBE STORE | WISHLIST</title>
 	<link rel="stylesheet" href="https://vybe-ui.netlify.app/style.css">
-	<link rel="stylesheet" href="../style.css">
 	<link rel="stylesheet" href="../CSS/products.css">
+	<link rel="stylesheet" href="../style.css">
 	<link rel="stylesheet" href="../CSS/wishlist.css">
 	<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -19,10 +19,10 @@
 	<nav class="nav-bar shadow-box" id="my-nav-bar">
 		<div class="nav-section">
 			<!-- hamburger menu -->
-			<div class="burger nav-section-items">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
+			<div id="hamburger-menu-icon" class="hamburger nav-section-items">
+				<span >
+					<i class="fas fa-bars font-size-24"></i>
+				</span>
 			</div>
 
 			<!-- LOGO -->
@@ -34,7 +34,15 @@
 			<ul class="nav-bar-links list-style-none nav-section-items">
 				<li class="list-inline-item avatar-in-nav-links">
 					<div class="primary-text-color logo-title">VYBE UI</div>
+					<span id="close-mobile-nav" ><i class="fas fa-times font-size-24"></i></span>
 				</li>
+				<li class="list-inline-item navbar-search-bar">
+					<label class="search-bar">
+						<span class="search-bar-btn" type="submit"><i class="fa fa-search"> </i></span>
+						<input class="search-bar-input" type="text" placeholder="Search" name="search">
+					</label>
+				</li>
+				<li class="list-inline-item"><button class="btn btn-filled-primary text-bold-weight"><a href="/pages/login.html" style="color: var(--white-color);">Login</a></button></li>
 			</ul>
 		</div>
 		<div class="navbar-search-bar">
@@ -336,5 +344,7 @@
 		
 	</section>
 </div>
+<script src="../JS/navbar.js"></script>
+
 </body>
 </html>

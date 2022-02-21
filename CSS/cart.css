@@ -84,15 +84,43 @@
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+	-moz-appearance: textfield;
 }
 
 button:focus{
 	outline: none;
+}
+
+@media screen and (max-width:1024px){
+	.cart-container{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.horizontal-card{
+		flex-direction: column;
+	}
+
+	.horizontal-card .image-container{
+		width: 100%;
+	}
+
+	.image-container img{
+		aspect-ratio: 4 / 5;
+		width: 100%;
+	}
+
+	.total-ticket-container{
+		width: 100vw;
+	}
+
+	.margin-trb-20{
+		margin: 2rem;
+	}
 }
