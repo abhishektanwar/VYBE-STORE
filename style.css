@@ -74,7 +74,6 @@
 .product-display{
 	grid-area:product-display;
 	min-height: 10vh;
-	/* width: 100%; */
 	top: 0;
 	display: flex;
 	padding-left: 12rem;
@@ -294,11 +293,4 @@ button .no-style-anchor{
 	  }
 
 }
-/* 
-.slide{
-	width: 35rem;
-	padding: 2rem 0;
-	height: 35rem;
-	background-color: var(--dark-primary-color);
-}
- */
+
