@@ -1,7 +1,3 @@
-body{
-	background-color: var(--grey-background-color);
-}
-
 .wishlist-grid{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(220px,1fr));

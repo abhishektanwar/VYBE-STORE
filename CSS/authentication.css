@@ -1,9 +1,5 @@
-body{
-	background-color: var(--grey-background-color);
-}
-
 .authentication-container{
-	background-color: var(--white-color);
+	background-color: var(--bg-color-primary);
 	height:fit-content;
 	width: 50em;
 	align-items: center;
