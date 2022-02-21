@@ -383,7 +383,7 @@ cursor: pointer;
 	}
 
 	.active .nav-bar-links .list-inline-item:not(.avatar-in-nav-links){
-		padding: 1.6rem 2.4rmobile-nav-bg-colorem;
+		padding: 1.6rem 2.4rem;
 	}
 	
 	.active .nav-bar-links .list-inline-item:not(:last-of-type) {
